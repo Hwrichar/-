@@ -5,8 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,initial-scale=1.0,width=device-width" />
     <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
-    <title>Hello APP</title>
+    <title>饥荒怪物宝典</title>
     <link rel="stylesheet" type="text/css" href="./css/api.css" />
+    <link rel="stylesheet" type="text/css" href="./css/aui.css" />
     <style type="text/css">
         html,
         body {
@@ -23,7 +24,7 @@
             height: 44px;
             width: 100%;
             text-align: center;
-            background-color: #81a9c3;
+            background-color: #99CCFF;
             color: #fff;
             line-height: 44px;
             font-size: 20px;
@@ -33,30 +34,49 @@
             -webkit-box-flex: 1;
             -webkit-flex: 1;
         }
+      main{
+        width: 200px;
+        height:100px;
 
+      }
         footer {
             height: 30px;
             width: 100%;
-            background-color: #81a9c3;
+            background-color: #99CCFF;
             color: white;
             line-height: 30px;
             text-align: center;
         }
+
     </style>
 </head>
 
 <body class="wrap">
-    <header>APICloud</header>
+    <header>首页</header>
     <section class="flex-1">
-
+      <ul class="aui-list aui-list-in">
+            <li class="aui-list-header">
+                物种分类
+            </li>
+            <li class="aui-list-item">
+              <a href="./html/BOSS.html">
+                <div class="aui-list-item-inner">
+                    <div class="aui-list-item-title">BOSS</div>
+                </div>
+                </a>
+            </li>
+        </ul>
     </section>
-    <footer>Copyright &copy;<span id="year"></span></footer>
+
+    <footer>
+
+    </footer>
 </body>
 <script type="text/javascript" src="./script/api.js"></script>
 <script type="text/javascript">
     apiready = function() {
         //输出Log，Log将显示在APICloud Studio控制台
-        console.log("Hello World! Hello APICloud!");
+
 
         var header = $api.dom('header'); // 获取 header 标签元素
         var footer = $api.dom('footer'); // 获取 footer 标签元素
