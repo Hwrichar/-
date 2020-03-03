@@ -21,12 +21,12 @@
         }
 
         header {
-            height: 44px;
+            height: 40px;
             width: 100%;
             text-align: center;
             background-color: #99CCFF;
             color: #fff;
-            line-height: 44px;
+            line-height: 40px;
             font-size: 20px;
         }
 
@@ -40,36 +40,28 @@
 
       }
         footer {
-            height: 30px;
+            height: 20px;
             width: 100%;
-            background-color: #99CCFF;
-            color: white;
-            line-height: 30px;
-            text-align: center;
-        }
+            background-color:#99CCFF;
 
+        }
+        footer p{
+          font-size: 10px;
+          color: #ffffff;
+          line-height: 20px;
+          text-align: center;
+        }
     </style>
 </head>
 
 <body class="wrap">
     <header>首页</header>
     <section class="flex-1">
-      <ul class="aui-list aui-list-in">
-            <li class="aui-list-header">
-                物种分类
-            </li>
-            <li class="aui-list-item">
-              <a href="./html/BOSS.html">
-                <div class="aui-list-item-inner">
-                    <div class="aui-list-item-title">BOSS</div>
-                </div>
-                </a>
-            </li>
-        </ul>
+
     </section>
 
     <footer>
-
+          <p>内容来源互联网：87g.com</p>
     </footer>
 </body>
 <script type="text/javascript" src="./script/api.js"></script>
@@ -99,9 +91,8 @@
             }
         });
 
-        // 获取当前年份时间，并加载显示到页面
-        var year = $api.byId('year');
-        year.innerHTML = new Date().getFullYear();
+
+
     };
 
 </script>

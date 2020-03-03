@@ -5,8 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, initial-scale=1.0, width=device-width" />
     <meta name="format-detection" content="telephone=no, email=no, date=no, address=no">
-    <title>Hello APP</title>
+    <title>饥荒怪物宝典</title>
     <link rel="stylesheet" type="text/css" href="../css/api.css" />
+      <link rel="stylesheet" type="text/css" href="../css/aui.css" />
     <style>
         label {
             margin: 10px;
@@ -20,52 +21,73 @@
         ul li {
             margin: 5px 10px;
             padding: 5px;
-            color: #000;
+            color: white;
             word-wrap: break-word;
         }
     </style>
 </head>
 
 <body>
-    <label>Hello APP</label>
-    <div id='sys-info'></div>
+  <ul class="aui-list aui-list-in">
+        <li class="aui-list-header">
+            物种分类
+        </li>
+
+        <li class="aui-list-item">
+          <a href="../html/BOSS.html">
+            <div class="aui-list-item-inner">
+                <div class="aui-list-item-title">BOSS</div>
+            </div>
+          </a>
+        </li>
+
+        <li class="aui-list-item">
+          <a href="../html/fly.html">
+            <div class="aui-list-item-inner">
+                <div class="aui-list-item-title">飞行生物</div>
+            </div>
+            </a>
+        </li>
+        <li class="aui-list-item">
+          <a href="../html/ludi.html">
+            <div class="aui-list-item-inner">
+                <div class="aui-list-item-title">陆地生物</div>
+            </div>
+            </a>
+        </li>
+        <li class="aui-list-item">
+          <a href="../html/haiyan.html">
+            <div class="aui-list-item-inner">
+                <div class="aui-list-item-title">海洋生物</div>
+
+            </div>
+            </a>
+        </li>
+        <li class="aui-list-item">
+          <a href="../html/donxue.html">
+            <div class="aui-list-item-inner">
+                <div class="aui-list-item-title">洞穴生物</div>
+            </div>
+            </a>
+        </li>
+        <li class="aui-list-item">
+          <a href="../html/xiee.html">
+            <div class="aui-list-item-inner">
+                <div class="aui-list-item-title">邪恶生物</div>
+            </div>
+            </a>
+        </li>
+        <li class="aui-list-item">
+          <a href="../html/wuhai.html">
+            <div class="aui-list-item-inner">
+                <div class="aui-list-item-title">无害生物</div>
+            </div>
+            </a>
+        </li>
+
+    </ul>
+
 </body>
 <script type="text/javascript" src="../script/api.js"></script>
-<script type="text/javascript">
-    apiready = function() {
-        var ver = api.version;
-        var sType = api.systemType;
-        var sVer = api.systemVersion;
-        var id = api.deviceId;
-        var model = api.deviceModel;
-        var name = api.deviceName;
-        var cType = api.connectionType;
-        var winName = api.winName;
-        var winWidth = api.winWidth;
-        var winHeight = api.winHeight;
-        var frameName = api.frameName || '';
-        var frameWidth = api.frameWidth || '';
-        var frameHeight = api.frameHeight || '';
-
-        var str = '<ul>';
-        str += '<li>引擎版本信息: ' + ver + '</li>';
-        str += '<li>系统类型: ' + sType + '</li>';
-        str += '<li>系统版本: ' + sVer + '</li>';
-        str += '<li>设备标识: ' + id + '</li>';
-        str += '<li>设备型号: ' + model + '</li>';
-        str += '<li>设备名称: ' + name + '</li>';
-        str += '<li>网络状态: ' + cType + '</li>';
-        str += '<li>主窗口名字: ' + winName + '</li>';
-        str += '<li>主窗口宽度: ' + winWidth + '</li>';
-        str += '<li>主窗口高度: ' + winHeight + '</li>';
-        str += '<li>子窗口名字: ' + frameName + '</li>';
-        str += '<li>子窗口宽度: ' + frameWidth + '</li>';
-        str += '<li>子窗口高度: ' + frameHeight + '</li>';
-        str += '</ul>';
-
-        $api.byId('sys-info').innerHTML = str;
-
-    };
-</script>
 
 </html>
